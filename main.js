@@ -60,7 +60,7 @@ Ball.prototype.collitionDetect = function() {
 
 let balls = [];
 
-while(balls.length < 25) {
+while(balls.length < 100) {
     let size = random(20, 10);
     let ball = new Ball(
         random(width - size, size),
@@ -74,7 +74,7 @@ while(balls.length < 25) {
 }
 
 function loop() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
     ctx.fillRect(0, 0, width, height);
 
     for(let i = 0; i < balls.length; i++) {
